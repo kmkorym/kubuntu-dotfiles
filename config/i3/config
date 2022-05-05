@@ -206,7 +206,10 @@ for_window [class="^.*"] border normal
 gaps inner 8 
 gaps outer 5
 exec_always --no-startup-id feh --bg-scale ~/Pictures/bg2.jpg
-exec_always --no-startup-id picom --config ~/.config/picom.conf   -bc
+exec_always --no-startup-id picom --experimental-backends  --config ~/.config/picom.conf   -bc
+
+# when executing in vm, blur will slow down the machine, use trasnparent only 
+#exec_always --no-startup-id picom --config ~/.config/picom.conf   -bc
 
 #move window to default place when login 
 #if don't do this, all windows will move to workspace 1 ...
