@@ -213,6 +213,5 @@ exec_always --no-startup-id picom --experimental-backends  --config ~/.config/pi
 
 #move window to default place when login 
 #if don't do this, all windows will move to workspace 1 ...
-for_window [class="Firefox"] move window  to workspace $ws1
-bindsym $mod+x [class="konsole"] move window to workspace $ws4; [title="\.sh"]  move window to workspace $ws3
+bindsym $mod+x [class="konsole"] move window to workspace $ws4; [title="\.sh"]  move window to workspace $ws3;  [class="firefox"] move window  to workspace $ws1
 #$exec_always --no-startup-id flashfocus
