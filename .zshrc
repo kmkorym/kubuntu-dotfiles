@@ -112,6 +112,9 @@ fi
 source ${ZIM_HOME}/init.zsh
 source ~/.zim/modules/zshange_directory_recent/zdr.zsh
 
+
+
+
 # ------------------------------
 # Post-init module configuration
 # ------------------------------
@@ -127,5 +130,15 @@ zmodload -F zsh/terminfo +p:terminfo
 for key ('k') bindkey -M vicmd ${key} history-substring-search-up
 for key ('j') bindkey -M vicmd ${key} history-substring-search-down
 unset key
-# }}} End configuration added by Zim install
 
+bindkey -M viins -r "^R"
+bindkey -v -r "^R" 
+bindkey -a "^R" fzf_history_search
+bindkey -v "^R" fzf_history_search
+# }}} End configuration added by Zim install
+alias .='ls'
+alias ,='ls -alh'
+alias ..='cd ..'
+alias vim='nvim'
+bindkey "^x" edit-command-line
+bindkey -e

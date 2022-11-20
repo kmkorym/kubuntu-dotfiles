@@ -58,3 +58,6 @@ zmodule https://github.com/Kjeldgaard/zshange_directory_recent
 zmodule https://github.com/qoomon/zjump
 zmodule https://github.com/joshskidmore/zsh-fzf-history-search
 zmodule https://github.com/Aloxaf/fzf-tab
+#zmodule https://github.com/z-shell/zsh-select
+#zmodule jeffreytse/zsh-vi-mode
+#zmodule kutsan/zsh-system-clipboard
